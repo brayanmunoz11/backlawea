@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const pool = require("../src/database");
+const pool = require("../database");
 
 router.get("/publicar",  (req, res,next) => {
 

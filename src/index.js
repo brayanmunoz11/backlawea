@@ -58,6 +58,13 @@ app.use(session({
 //Routes
 app.use(require('./routes/links'));
 
+app.get('/', (req, res) => {
+  //Resopuesta a la peticion
+  res.status(200).json({
+    gawr: 'gura'
+  })
+})
+
 //Public
 
 // app.use(express.static(path.join(__dirname, 'public')));
