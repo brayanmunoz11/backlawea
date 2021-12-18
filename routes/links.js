@@ -3,6 +3,10 @@ const router = express.Router();
 const pool = require("../src/database");
 
 router.get("/publicar",  (req, res,next) => {
+
+  res.status(200).json({
+    gawr: 'gura'
+  })
 });
 
 router.post("/publicar", async (req, res,next) => {
