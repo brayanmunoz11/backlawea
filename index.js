@@ -30,6 +30,7 @@ app.use(express.urlencoded({extended: true, limit: "8mb"}));
 //Se usa el json
 app.use(express.json())
 
+/*
 //Importamos la ruta users
 const links = require('./routes/links')
 
@@ -37,7 +38,7 @@ const links = require('./routes/links')
 
 
 //Se usa la ruta login
-app.use(links)
+app.use(links)*/
 //Se usa la ruta users
 app.get('/', (req, res) => {
   //Resopuesta a la peticion
