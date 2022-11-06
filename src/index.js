@@ -65,6 +65,30 @@ app.get('/', (req, res) => {
   })
 })
 
+app.post('/', (req, res) => {
+  //Respuesta a la peticion
+  
+  const { acquirer_id , commerce_id , operation_number} = req.body
+  const { signature } = req.headers
+  
+  const body = {
+    "acquirer_id": acquirer_id , 
+    "commerce_id": commerce_id  , 
+    "operation_number": operation_number
+  
+  
+  }
+  
+    
+  
+  res.status(200).json({
+    gawr: 'gura',
+    Signature : signature,
+    Body: body
+    
+  })
+})
+
 //Public
 
 // app.use(express.static(path.join(__dirname, 'public')));
