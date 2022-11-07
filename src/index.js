@@ -82,9 +82,7 @@ app.post('/', (req, res) => {
     
   
   res.status(200).json({
-    gawr: 'gura',
-    Signature : signature,
-    Body: body
+    body: req.body
     
   })
 })
